@@ -1,0 +1,27 @@
+## API Key
+
+API Key ek secret code hota hai jo kisi AI service, payment gateway, map service, ya external API ko use karne ke liye diya jata hai. Isse server identify karta hai ki request kaun bhej raha hai. Jaise OpenAI, Stripe, Google Maps, Firebase sab API keys use karte hain. API key ko password ki tarah treat karna chahiye.
+
+
+## API Key Secure Kaise Rakhte Hain
+
+API key ko kabhi frontend code, public GitHub repo, ya HTML/JS file mein direct nahi likhna chahiye. Hamesha backend aur environment variables mein store karte hain. Agar key leak ho gayi toh koi bhi tumhari service use karke billing badha sakta hai ya misuse kar sakta hai.
+
+
+## .env File Kya Hoti Hai
+
+`.env` file ek hidden configuration file hoti hai jisme secret data store karte hain jaise API keys, database password, secret keys, etc.
+
+Example:
+
+```env
+OPENAI_API_KEY=your_secret_key
+DEBUG=False
+```
+
+Python/Django mein `.env` file se data load karke secure way mein use karte hain.
+
+
+## GitHub Pe API Key Kabhi Push Nahi Karni
+
+`.env` file ko hamesha `.gitignore` mein add karna chahiye taki woh GitHub pe upload na ho. Agar API key public ho gayi toh attackers uska misuse kar sakte hain aur account ka bill ya security issue ho sakta hai. Isliye production projects mein secrets protection bahut important hota hai.

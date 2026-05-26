@@ -1,0 +1,49 @@
+WHat is AI ?
+AI (Artificial Intelligence) ek smart technology hai jo computers ko human ki tarah sochne, samajhne, aur kaam karne mein help karti hai. Iska use real life mein time bachane, automatic kaam karne, aur fast results dene ke liye hota hai. Jaise YouTube tumhare interest ke videos suggest karta hai ya Google Maps shortest route batata hai, yeh sab AI ki wajah se hota hai. Simple words mein, AI machines ko smart banata hai taaki life aur work easy ho sake.
+
+
+What is Machine Learning ?
+Machine Learning (ML) AI ka ek part hai jisme computer data se khud seekhta hai aur experience ke saath better results dene lagta hai. Isme har cheez manually program nahi karni padti. Jaise YouTube ya Instagram tumhe tumhare interest ke posts aur videos dikhata hai, woh Machine Learning ki help se hota hai kyuki system tumhara behavior samajhkar predictions karta hai.
+
+
+What is LLM ?
+LLM (Large Language Model) ek type ka AI model hai jo human language ko samajh sakta hai aur human jaisa text generate kar sakta hai. Yeh bahut zyada data par train hota hai, isliye questions ka answer dena, coding help karna, content likhna, translation karna, aur chatbot ki tarah baat karna kar sakta hai.
+
+Simple example:
+
+Jab tum ChatGPT se question poochte ho aur woh human jaisa answer deta hai, toh uske peeche LLM ka use hota hai.
+
+User Input
+     ↓
+LLM Input Process
+     ↓
+Data & Pattern Understanding
+     ↓
+Best Response Generate
+     ↓
+Answer to User
+
+
+What is Prompt ?
+Prompt woh instruction ya message hota hai jo hum AI ko dete hain taaki AI samajh sake ki hume kya output chahiye. Simple words mein, AI ko diya gaya input hi prompt kehlata hai. Agar prompt clear ho, toh AI ka response bhi better hota hai.
+Ek strong professional prompt ka simple structure:
+Role + Task + Details + Output Format
+
+Example:
+Act as a professional Django developer and create a secure login system using Django with OTP verification. Give clean and production-ready code with explanation.
+Is prompt mein:
+
+role diya → professional Django developer
+task diya → secure login system
+extra details diye → OTP verification
+output format diya → clean production-ready code
+
+
+What is API ?
+API (Application Programming Interface) ek system hota hai jo do applications ya software ko aapas mein connect aur communicate karne mein help karta hai. Simple words mein, API ek bridge ki tarah kaam karta hai jisse ek application dusre application se data bhej ya receive kar sakta hai.
+
+
+What is Generative AI ? 
+Generative AI ek type ka AI hai jo naya content create ya generate kar sakta hai, jaise text, images, code, music, ya videos. Yeh existing data se patterns seekhkar human jaisa output banata hai.
+Jaise jab tum ChatGPT se content likhwate ho, coding help lete ho, ya AI image tools se images generate karte ho, toh waha Generative AI ka use hota hai. Simple words mein:
+Generative AI = content banane wala smart AI system.

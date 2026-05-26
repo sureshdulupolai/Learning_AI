@@ -1,0 +1,119 @@
+```txt
+1. Foundations of Networking, Operating Systems & Linux
+-------------------------------------------------------
+Topics:
+- Networking Fundamentals
+- Core Internet Technologies
+- Network Routing & Communication
+- Network Security & Protection
+- Operating System Fundamentals
+- Linux & Kali Linux Environment
+- Linux Commands & System Management
+
+Hours:
+30 hrs
+
+Tools:
+- Cisco Packet Tracer
+- Kali Linux
+- VirtualBox / VMware
+- Wireshark
+- AI Tools (ChatGPT / ShellGPT)
+
+
+2. Python for Cybersecurity Tools Building
+------------------------------------------
+Topics:
+- Python Fundamentals for Cybersecurity
+- File Handling & Libraries in Python
+- Networking and Security Scripting with Python
+- Practical Cybersecurity Projects using Python
+
+Hours:
+18 hrs
+
+Tools:
+- Jupyter Notebook
+- Python IDE
+- AI Tools (ChatGPT / Gemini)
+
+
+3. Ethical Hacking: Footprinting, Scanning & Exploitation
+---------------------------------------------------------
+Topics:
+- Ethical Hacking Fundamentals
+- Kali Linux and Security Tools
+- Enumeration and Vulnerability Assessment
+- Exploitation and Attack Techniques
+- Cyber Threats and Attack Vectors
+- Cryptography and Cloud Security
+
+Hours:
+28 hrs
+
+Tools:
+- Nmap
+- Metasploit Framework
+- Hydra
+- OWASP ZAP
+- SEToolkit
+- Wireshark
+- AI Tools (ChatGPT / Shodan / AutoSploit)
+
+
+4. Web Application Security & VAPT
+----------------------------------
+Topics:
+- Web Application Security Fundamentals
+- Vulnerability Scanning and Assessment Tools
+- Web Application Testing Techniques
+- Common Web Vulnerabilities
+- Reporting and Security Practices
+- Cloud and Advanced Web Security Fundamentals
+
+Hours:
+44 hrs
+
+Tools:
+- Burp Suite
+- Nessus
+- Nuclei
+- OWASP ZAP
+- Postman
+- VS Code
+- AI Tools (OpenAI / ChatGPT)
+
+
+5. SOC Analyst & Blue Team Operations
+-------------------------------------
+Topics:
+- SIEM and Security Frameworks
+- Incident Response and Investigation
+- Log Management and Analysis
+- Cloud Monitoring and Visibility
+- Cloud Incident Response and Security Practices
+
+Hours:
+40 hrs
+
+Tools:
+- Splunk
+- Wazuh
+
+
+6. Digital Forensics Foundation
+-------------------------------
+Topics:
+- Digital Forensics Fundamentals
+- Evidence Handling and Preservation
+- Forensic Analysis Techniques
+- Forensic Tools and Investigation Workflow
+
+Hours:
+20 hrs
+
+Tools:
+- Autopsy
+- FTK Imager
+- Sleuth Kit
+```
