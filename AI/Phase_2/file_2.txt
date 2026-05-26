@@ -1,0 +1,182 @@
+1. POST Request Kya Hota Hai
+
+POST request ka matlab hota hai:
+Server ko data bhejna.
+AI ko tum message, prompt, model name sab bhejte ho.
+
+
+2. Headers Kya Hote Hain
+
+Headers extra information hoti hain jo request ke saath bhejte hain.
+Headers request ke saath metadata bhejte hain jo authentication, content type, session handling, security, aur communication control ke liye use hota hai.
+Agar Headers Na Ho Toh Kya Hoga?
+
+Server confuse ho jayega.
+
+Usko nahi pata chalega:
+
+request valid hai ya fake
+user login hai ya nahi
+JSON bheja gaya ya image
+mobile request hai ya browser
+secure request hai ya nahi
+
+Matlab:
+communication proper nahi hoga.
+
+Real Website Flow
+
+Socho tum login karte ho kisi website me.
+Example:
+GitHub
+Tum browser se request bhejte ho.
+
+Browser silently headers bhejta hai:
+Authorization: Bearer TOKEN
+Cookie: sessionid=abc123
+Content-Type: application/json
+User-Agent: Chrome
+
+| Header        | Server Kya Samjha          |
+| ------------- | -------------------------- |
+| Authorization | user authenticated hai     |
+| Cookie        | session active hai         |
+| Content-Type  | JSON data aaya             |
+| User-Agent    | Chrome browser use ho raha |
+
+
+Headers Nahi Honge Toh
+| Problem          | Result                |
+| ---------------- | --------------------- |
+| No Authorization | Unauthorized          |
+| No Content-Type  | Data parsing fail     |
+| No Cookie        | Logout issue          |
+| No Origin        | Security issue        |
+| No Accept        | Wrong response format |
+
+
+
+3. Body Kya Hoti Hai
+
+Body mein actual data hota hai jo AI ko bhejna hai.
+Example:
+{
+  "model": "gpt-4.1-mini",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hello"
+    }
+  ]
+}
+Yahi main AI input hota hai.
+
+
+4. Model Kya Hota Hai
+
+model decide karta hai kaunsa AI use hoga.
+Example: "gpt-4.1-mini"
+Different models ki speed, intelligence, aur pricing alag hoti hai.
+
+
+5. Messages Kya Hote Hain
+
+messages conversation ka format hota hai.
+AI ko pura chat structured way mein diya jata hai.
+
+Example:
+messages=[
+  {"role": "user", "content": "Hi"}
+]
+
+
+6. Role Kya Hota Hai
+
+role batata hai message kisne bheja.
+
+Main roles:
+system → AI ko instructions dene ke liye
+user → user ka message
+assistant → AI ka previous response
+
+Example:
+
+{"role": "system", "content": "You are a helpful assistant"}
+
+
+7. Content Kya Hota Hai
+
+content actual text hota hai jo bhejna hai.
+
+Example:
+{"role": "user", "content": "Explain Python"}
+
+Yahan "Explain Python" actual prompt hai.
+
+
+
+
+
+--------------------------------------------------
+IMP Roles in AI
+-------------------------------------------------
+1. system Role
+
+system AI ko rules, behavior, aur instructions dene ke liye use hota hai. Ye directly user ko show nahi hota, but AI isi instruction ko follow karta hai.
+
+2. user Role
+user actual insan ka message hota hai.
+
+3. assistant Role
+assistant AI ke previous responses ko represent karta hai.
+
+
+messages = [
+  {
+    "role": "system",
+    "content": "You are a coding teacher."
+  },
+
+  {
+    "role": "user",
+    "content": "What is Python?"
+  },
+
+  {
+    "role": "assistant",
+    "content": "Python is a programming language."
+  },
+
+  {
+    "role": "user",
+    "content": "Is it easy to learn?"
+  }
+]
+
+Is Example Mein Kya Ho Raha Hai
+
+> system
+AI ko instruction diya:
+-> Coding teacher ki tarah behave karo.
+
+> First user
+User ne pucha:
+-> What is Python?
+
+> assistant
+AI ne answer diya:
+-> Python is a programming language.
+
+> Second user
+User ne next question pucha:
+-> Is it easy to learn?
+
+Ab AI previous context samajh lega ki baat Python ki ho rahi hai.
+
+
+Short Memory Trick:
+system → AI ko rules do
+user → User ka question
+assistant → AI ka reply/history
+
+Ye teen roles almost har modern AI chat system mein use hote hain.
